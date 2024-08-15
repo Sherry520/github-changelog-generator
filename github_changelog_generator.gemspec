@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.name               = "github_changelog_generator"
   spec.version            = GitHubChangelogGenerator::VERSION
 
-  spec.required_ruby_version = ">= 2.3.0"
+  #spec.required_ruby_version = ">= 2.3.0"
   spec.authors = ["Petr Korolev", "Olle Jonsson"]
   spec.email = "sky4winder+github_changelog_generator@gmail.com"
 
@@ -26,8 +26,8 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency("activesupport")
   spec.add_runtime_dependency("faraday-http-cache")
   spec.add_runtime_dependency("multi_json")
-  spec.add_runtime_dependency("octokit", ["~> 4.6"])
-  spec.add_runtime_dependency "rainbow", ">= 2.2.1"
-  spec.add_runtime_dependency "rake", ">= 10.0"
-  spec.add_runtime_dependency("retriable", ["~> 3.0"])
+  spec.add_runtime_dependency("octokit")
+  spec.add_runtime_dependency("rainbow")
+  spec.add_runtime_dependency("rake")
+  spec.add_runtime_dependency("retriable")
 end
